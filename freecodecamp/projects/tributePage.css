@@ -1,0 +1,134 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+body{
+    display: flex;
+    color: #FFF;
+}
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+footer{
+    margin: 32px 0;
+    margin-bottom: 0;
+    font-family: monospace;
+    color: #FFF;
+}
+
+img#image{
+    display: block;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1#title{
+    font-size: 3em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #333;
+    padding: 0 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: .70em;
+}
+
+.card p{
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.card ul{
+    text-align: left;
+}
+
+.card li{
+    padding: 7px 0;
+}
+
+div#main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+div#img-div{
+    margin: 0;
+    padding: 16px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    width: 100%;
+    background: #FFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+    color: #333;
+}
+
+div#tribute-info{
+    margin-top: 16px;
+    width: 100%;
+    display: grid;
+}
+
+@media (max-width: 1140px){
+    div#tribute-info{
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 20px;
+    }
+    .nav a{
+        margin: 0;
+        padding: 0 7px;
+    }
+    @media (max-width: 440px){
+        body{
+            font-size: 14px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+        }
+        .nav a{
+            padding: 7px 0;
+        }
+    }
+}
+
+@media (min-width: 1140px){
+    div#tribute-info{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    .nav{
+        float: right;
+    }
+    h1#title{
+        float: left;
+    }
+}

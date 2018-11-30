@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="surveyForm.css" media="screen" rel="stylesheet" type="text/css">
+    <title>Mary Kay Survey Form</title>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header class="text-center">
+    <img class="logo" src="../../img/mary-kay-logo.png" alt="Mary Kay Logo">
+    <h1 id="title">Pink Survey</h1>
+    <p>A special gift for you!</p>
+</header>
+<main>
+    <form id="survey-form">
+        <p id="description" class="text-center">Let us know how we can make you more beautiful</p>
+        <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" class="form-control w-100" name="name" placeholder="Your Full Name" required>
+        <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" class="form-control w-100" name="email" placeholder="example@marykay.com" required>
+        <label id="number-label" for="number">How old</label>
+            <input type="number" id="number" class="form-control w-33" name="number" min="7" max="99" placeholder="Age" required>
+        <label id="address-label" for="address">Address<span class="text-muted"> (Optional)</span></label>
+            <input type="text" id="address" class="form-control w-100" name="address" placeholder="Example: Rua 145, Qd. 60, Bl. 25, Apto. 202">
+        <label id="sector-label" for="sector">Sector </label>
+            <input type="text" id="sector" class="form-control w-100" name="sector" placeholder="Your sector" required>
+        <label id="city-label" for="city">City </label>
+            <input type="text" id="city" class="form-control w-100" name="city" placeholder="Your city" required>
+        <label id="phone-label" for="phone">Phone number </label>
+            <input type="text" id="phone" class="form-control w-100 mb-2" name="phone" placeholder="(0xx) 9xxxx - xxxx" required>
+        <hr>
+        <label id="dropdown-label" for="currentPos">Which option best describes your current role?</label>
+        <select id="dropdown" class="form-control w-33 mb-4" name="currentPos">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="fulljob">Full Time Job</option>
+            <option value="halfjob">Half Time Job</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        <label>How likely is that you would recommend Mary Kay to a friend?</label>
+        <ul class="mb-4">
+            <li><label><input name="radio-buttons" value="1" type="radio">Definitely</label></li>
+            <li><label><input name="radio-buttons" value="2" type="radio">Maybe</label></li>
+            <li><label><input name="radio-buttons" value="3" type="radio">Not sure</label></li>
+        </ul>
+        <label>What is the best day for you?</label>
+        <div class="mb-4">
+            <label><input name="radio-week" value="1" type="radio">Sun</label>
+            <label><input name="radio-week" value="2" type="radio">Mon</label>
+            <label><input name="radio-week" value="3" type="radio">Tue</label>
+            <label><input name="radio-week" value="4" type="radio">Wed</label>
+            <label><input name="radio-week" value="5" type="radio">Thu</label>
+            <label><input name="radio-week" value="6" type="radio">Fri</label>
+            <label><input name="radio-week" value="7" type="radio">Sat</label>
+        </div>
+        <label>Best time to contact?</label>
+        <div class="mb-4">
+            <label><input name="radio-hour" value="1" type="radio">Morning</label>
+            <label><input name="radio-hour" value="2" type="radio">Afternoon</label>
+            <label><input name="radio-hour" value="3" type="radio">Evening</label>
+        </div>
+        <label for="preferences">Would you like to know more about:</label>
+        <ul class="mb-4">
+            <li><label><input name="prefer" value="1" type="checkbox">Skin care</label></li>
+            <li><label><input name="prefer" value="2" type="checkbox">Body care</label></li>
+            <li><label><input name="prefer" value="3" type="checkbox">Business Opportunities</label></li>
+            <li><label><input name="prefer" value="4" type="checkbox">Make Up</label></li>
+        </ul>
+        <label for="comments">Any Comments or Suggestions?</label>
+        <textarea id="comments" class="mb-4 w-100" name="comments" placeholder="Enter your comment here"></textarea>
+        <hr>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</main>
+<footer class="text-center text-muted">
+    <p>&copy 2017-2018 Norkel</p>
+</footer>
+</body>
+
+</html>
