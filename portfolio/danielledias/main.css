@@ -1,0 +1,177 @@
+/*------------------------------------------------------------------
+Imports
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300');
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+/*------------------------------------------------------------------
+Root
+*/
+:root{
+    font-size: 19px;
+
+/*Var declarations*/
+
+}
+
+/*------------------------------------------------------------------
+Reset styles
+*/
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.77;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/*------------------------------------------------------------------
+Main styles
+*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+main{
+    margin: 0;
+    color: #333;
+}
+@media (max-width: 576px){
+    main{font-size: .8rem}
+}
+main h2{
+    font-family: 'Parisienne', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+/*Header Classes*/
+
+header.header{
+    padding: 3rem .75rem;
+}
+header .logo{
+    max-width: 100%;
+}
+/*Small Devices (sm) - Tablets forward*/
+@media (min-width: 768px){header .logo{width:50%;max-width:670px;}}
+
+header .nav-bar{
+    font-weight: 300;
+}
+header .nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 200px;
+    margin: auto;
+}
+header .nav-bar a{
+    color: black;
+}
+header .nav-link{
+    display: block;
+    padding: 2px 0;
+}
+header a.nav-link:hover{
+    background-color: rgba(211,211,211,.5);
+}
+/*Small Devices (sm) - Tablets forward*/
+@media (min-width: 768px){
+    header .nav-bar ul{
+        display: inline-block;
+        width: auto;
+    }
+    header .nav-bar li{
+        float: left;
+    }
+    header .nav-link{
+        padding: 8px 16px;
+    }
+}
+
+/*Main Classes*/
+main .main-header{
+    max-height: 580px;
+    overflow: hidden;
+}
+main .display-img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.link-instagram{color: white}.link-instagram:hover{color:#4CAF50}
+
+#gallery .display-img:hover{
+    opacity: .8;
+}
+
+/*Footer Classes*/
+footer a{color: grey}footer a:hover{color:#4CAF50!important}
+
+.right-footer{float: right}
+.left-footer{float: left}
+
+/*------------------------------------------------------------------
+Global Class styles
+*/
+.text-center{text-align: center}.text-justify{text-align: justify}
+.icon-larger{font-size:1.5em;vertical-align: middle}
+
+.hover-text-green:hover{color:#4CAF50!important}
+
+.border-grey{border: 1px solid #ccc!important;}
+
+.dark-bg{background-color:black!important;color:white!important}
+.white-bg{background-color: white!important}
+.dark-grey-bg{background-color: #616161 !important;color: white !important;}
+.lightpink-bg{background-color: rgba(255, 182, 193, .1)}
+.lightgrey-bg{background-color: rgba(204, 204, 204, .1)}
+
+.pad-small{padding: .75rem;}.pad-top-small{padding-top: .75rem;}.pad-bot-small{padding-bottom: .75rem;}.pad-right-small{padding-right: .75rem;}.pad-left-small{padding-left: .75rem;}
+.pad-mid{padding: 1.5rem;}.pad-top-mid{padding-top: 1.5rem;}.pad-bot-mid{padding-bottom: 1.5rem;}.pad-right-mid{padding-right: 1.5rem;}.pad-left-mid{padding-left: 1.5rem;}
+.pad-large{padding: 3rem;}.pad-top-large{padding-top: 3rem;}.pad-bot-large{padding-bottom: 3rem;}.pad-right-large{padding-right: 3rem;}.pad-left-large{padding-left: 3rem;}
+.pad-xlarge{padding: 6rem}.pad-right-xlarge{padding-right: 6rem}.pad-left-xlarge{padding-left: 6rem}
+
+/*------------------------------------------------------------------
+Flex-box Structure styles
+*/
+
+.flex-box{display:flex;flex-direction: column;}
+
+.flex-item{width: 100%;}
+
+.flex-wrap{flex-wrap: wrap}
+
+.center-itens{
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 576px){
+    .flex-gallery{flex-direction: row}
+    .flex-wrap .flex-item{width: 49.9999%}
+}
+/*Small Devices (sm) - Tablets - min-width: 768px and max-width: 992px*/
+@media (min-width: 768px){
+    .flex-box{flex-direction: row}
+    .flex-shrink1{flex-shrink: 1}.flex-shrink2{flex-shrink: 2}.flex-shrink3{flex-shrink: 3}
+    .row-reverse{flex-direction: row-reverse}
+}
+/*Medium Devices (md) - Desktops - min-width: 992px and max-width: 1200px*/
+@media (min-width: 992px){
+    .flex-wrap .flex-item{width: 24.9999%}
+}
+/*Large Devices (lg) - Large Desktops - min-width: 1200px*/
+@media (min-width: 1200px){
+
+}
