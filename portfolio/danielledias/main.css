@@ -110,6 +110,7 @@ main .display-img{
 }
 
 .link-instagram{color: white}.link-instagram:hover{color:#4CAF50}
+.link-whatsapp{color: black}.link-whatsapp:hover{color:#4CAF50}
 
 #gallery .display-img:hover{
     opacity: .8;
