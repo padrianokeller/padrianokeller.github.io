@@ -47,7 +47,7 @@ const Profile = () => {
         <>
         <aside>
             <img 
-                src="/src/assets/img/me3.jpg" 
+                src="./img/me3.jpg" 
                 alt="Profile image" 
                 className='w-4/5 max-w-[290px] rounded-full
                     border-2 border-pkGray-border-light
