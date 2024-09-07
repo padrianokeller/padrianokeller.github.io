@@ -47,7 +47,7 @@ const Main = () => {
                 '>
                     <CardProject 
                         title='Gerencialize' 
-                        text='A Web Based SaaS to track e-invoices and manager tax and financial calculations.' 
+                        text='A Web Based SaaS to track e-invoices and manager tax and financial calculations.'
                     />
                     <CardProject 
                         title='Diet App' 
